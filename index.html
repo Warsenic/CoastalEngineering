@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coastal Project</title>
+
+<style>
+html {scroll-behavior: smooth;}
+
+body {margin: 0; font-family: Arial, sans-serif; background: linear-gradient(rgba(10,25,47,0.94), rgba(10,25,47,0.94)), url('1bodyocean.jpg') no-repeat center center; background-size: cover; color: white;}
+
+header {background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('1Coastal-Engineering.jpg') no-repeat center center/cover;padding: 60px 20px; text-align: center; color: white;}
+
+nav {position: sticky; top: 0; z-index: 1000; display: flex; justify-content: center; gap: 10px; padding: 10px; backdrop-filter: blur(10px); background: rgba(2, 62, 138, 0.7); border-bottom: 1px solid rgb(255,255,255,0.1);}
+
+nav a {color: #90e0ef; padding: 10px 16px; position: relative; text-decoration: none; font-weight: bold; transition: all 0.3s ease; border-radius: 6px;}
+nav a::after {content: ""; position: absolute; left: 0; bottom: 0; width: 0%; height: 2px; background: #00b4d8; transition: width 0.3s ease;}
+nav a:hover::after {width: 100%;}
+nav a:hover {color: #ffffff; background: rgba(0, 180, 216, 0.2);}
+nav a.active {background: #00b4d8; color: #001d3d; box-shadow: 0 0 10px #00b4d8;}
+
+section {padding: 40px;}
+
+.container {display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;}
+
+.card {position: relative; background: #112240; padding: 20px; border-radius: 10px; overflow: hidden; transition: transform 0.3s;}
+.card::before {content: ""; position: absolute; inset: 0; background-size: cover; background-position: center; opacity: 0;transition: opacity 0.4s ease;}
+.card::after {content: ""; position: absolute; inset: 0; background: rgba(0,0,0,0.5); opacity: 0; transition: opacity 0.4s ease;}
+.card:hover::before,
+.card:hover::after {opacity: 1;}
+.card:hover {transform: scale(1.05);}
+.card * {position: relative; z-index: 1;}
+
+.seawall::before {background-image: url('seawall.jpg');}
+.breakwater::before {background-image: url('breakwater.jpg');}
+.groyne::before {background-image: url('groyne.jpg');}
+.revetment::before {background-image: url('revetment.jpg');}
+
+.surge::before {background-image: url('stormsurge.jpg');}
+.erosion::before {background-image: url('erosion.jpg');}
+.tsunami::before {background-image: url('tsunami.jpg');}
+.flood::before {background-image: url('flood.jpg');}
+
+.nourishment::before {background-image: url('nourishment.jpg');}
+.mangrove::before {background-image: url('mangrove.jpg');}
+.reef::before {background-image: url('reef.jpg');}
+
+footer {background: #020c1b; text-align: center; padding: 15px;}
+
+h1 {color: #90e0ef;}
+h2 {color: #3cc93c;}
+
+nav a.active {background: #00b4d8; color: #001d3d; border-radius: 5px;}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1><b>Coastal Engineering</b></h1>
+<h2><p>"Protecting Coastlines and Communities"</p></h2>
+</header>
+
+<nav>
+<a href="#intro"><b>Introduction</b></a>
+<a href="#history"><b>History</b></a>
+<a href="#importance"><b>Importance</b></a>
+<a href="#structures"><b>Structures</b></a>
+<a href="#hazards"><b>Hazards</b></a>
+<a href="#solutions"><b>Solutions</b></a>
+<a href="#references"><b>References</b></a>
+</nav>
+
+
+<section id="intro">
+<h1><b>Introduction</b></h1>
+<p style="font-size: 20px;">The coastline represents a dynamic and constantly evolving boundary between land and sea, shaped by natural forces such as tides, storms, and erosion. Coastal Engineering plays an essential role in managing and protecting this delicate interface, where large sandy beaches can swiftly transform into vulnerable zones during adverse weather events. This specialised field applies scientific and engineering principles to stabilise shorelines, mitigate erosion, and enhance resilience against coastal hazards. The main goal of Coastal Engineering is to:
+<ul style="font-size: 20px;">
+<li>Prevent erosion</li>
+<li>Reduce flooding</li>
+<li>Protect people, infrastructure, and ecosystems</li>
+</ul>
+</p>
+</section>
+
+
+<section id="history">
+<h1><b>History</b></h1>
+<p style="font-size: 20px;">The History of coastal engineering can be dated back to the Early first century with the development of ancient ports in Rome such as the ports of Ostia and Portus. Evidence from carbon dating in archeological digs exhibit common properties of human efforts to form or change the two sites for the harbors. This was done by analyzing the radiocarbon content found in the different sediments. The group was able to analyze the sediment to approximate the different dredging phases that had been done. Particularly it seemed evident that there was planning for the quays and canals that were present in these two ports as well as many different dredging efforts in different phases.
+<br><br>
+While the specific date can not be pinpointed, such structures that reflect modern breakwaters and harbor infrastructure were discovered in Greece by Pausinias, an ancient Greek geographer, in 122 AD in the town of Aegina along the Saronic Gulf. These structures were used as protection as well as controlled passages as entry into the ancient port. The new port in Aegina has been built on top of the old infrastructure laid out from the ancient Greeks.</p>
+</section>
+
+
+<section id="importance">
+<h1><b>Why It Matters</b></h1>
+<p style="font-size: 20px;">The majority of people on earth reside close to coastlines, but these valuable properties are constantly at risk from erosion. Coastal engineering's primary duties include preventing erosion and safeguarding beaches. To prevent the destruction brought on by erosion or storm waves, coastal engineers develop defensive structures. Breakwaters, seawalls, groynes, and revetments are a few of the defences erected by coastal engineers to stop erosion. To protect coastal residential areas from the effects of storm floods, coastal engineers design defences.
+<br><br>
+In places where there are no natural harbours, coastal engineers build artificial harbours by erecting breakwaters and other maritime structures, providing a secure haven for vessels. These man-made structures absorb the wave pressure and deflect it away from the boats anchored in the harbour.
+<br><br>
+To provide a safe path for the passage of vessels into or out of waterways and harbours, coastal engineers are in charge of executing dredging activities. Protecting our coastal environment and running our commercial maritime industry depend heavily on the duties and activities of coastal engineering.
+</p>
+</section>
+
+
+<section id="structures">
+<h1><b>Coastal Structures</b></h1>
+<div class="container">
+</div>
+
+<div class="card seawall">
+<h2>Seawalls</h2>
+<p style="font-size: 20px;">A robust, or vertical coastal defense structures designed to protect shorelines, infrastructure, and communities from erosion, storm surges, and flooding. Constructed from materials like concrete, steel, or rubble-mound, they function as barriers between land and sea.</p>
+</div>
+
+<div class="card breakwater">      
+<h2>Breakwaters</h2>
+<p style="font-size: 20px;">A permanent structure constructed at a coastal area to protect against tides, currents, waves, and storm surges. Breakwaters have been built since antiquity to protect anchorages, helping isolate vessels from marine hazards such as wind-driven waves.</p>
+</div>
+        
+<div class="card groyne">
+<h2>Groynes</h2>
+<p style="font-size: 20px;">A rigid, fence-like hard engineering structures, made of rock, or concrete. They are built perpendicular to the coastline to combat erosion and trap sediment transported by longshore drift, building up beaches and providing a buffer against wave energy.</p>
+</div>
+
+<div class="card revetment">
+<h2>Revetments</h2>
+<p style="font-size: 20px;">A facing of impact-resistant material such as stone, concrete, sandbags, or wooden piles, applied to a bank or wall in order to absorb the energy of incoming water and protect it from erosion. River or coastal revetments are built to preserve the existing uses of the shoreline and for protection.</p>
+</div>
+
+</section>
+
+<section id="hazards">
+<h1>Coastal Hazards</h1>
+<div class="container">
+</div>
+
+<div class="card surge">
+<h2>Storm Surges</h2>
+<p style="font-size: 20px;">An abnormal rise in the water level along a shoreline produced by a meteorological disturbance such as hurricanes. As the hurricane winds pass over the surface of the sea they generate waves, which flood the shoreline.</p>
+</div>
+       
+<div class="card erosion">
+<h2>Coastal Erosion</h2>
+<p style="font-size: 20px;">The permanent loss of land and shoreline retreat caused by waves, currents, and sea-level rise. Driven by natural processes like storm surges and worsened by human activities such as infrastructure development and sand mining.</p>
+</div>
+        
+<div class="card tsunami">
+<h2>Tsunamis</h2>
+<p style="font-size: 20px;">Giant waves caused by earthquakes or volcanic eruptions under the sea. Out in the depths of the ocean, tsunami waves do not dramatically increase in height.</p>
+</div>
+       
+<div class="card flood">
+<h2>Flooding</h2>
+<p style="font-size: 20px;">The accumulation or overflow of water onto normally dry land, caused by rising water levels in streams, heavy rain, or rapid snowmelt. It is the most common natural disaster, resulting in the inundation of property and areas.</p>
+</div>
+
+</section>
+
+
+<section id="solutions">
+<h1>Sustainable Solutions</h1>
+<div class="container">
+</div>
+
+<div class="card nourishment">
+<h2>Beach Nourishment</h2>
+<p style="font-size: 20px;">Adding sand to restore beaches. Nourishment is typically a repetitive process because it does not remove the physical forces that cause erosion; it simply mitigates their effects.</p>
+</div>
+        
+<div class="card mangrove">
+<h2>Mangrove Planting</h2>
+<p style="font-size: 20px;">Strategically planting propagules or saplings at low tide. Done to restore coastal ecosystems, and create natural barriers against storm surges.</p>
+</div>
+        
+<div class="card reef">
+<h2>Artificial Reefs</h2>
+<p style="font-size: 20px;">Protect coastlines and marine life. Intended to control erosion, protect coastal areas,support reef restoration, improve aquaculture, or enhance scuba diving and surfing.</p>
+</div>
+
+</section>
+
+<section id="references">
+<h1>References</h1>
+<p style="font-size: 20px;"> Information: </p>
+<ul>
+<li>Salyer, A. (2025, January 9). Coastal Engineering Explained: What is it and why it matters for coastal protection. International Coastal Management. 
+<a href="https://www.coastalmanagement.com.au/what-is-coastal-engineering" style="color:#72daff;" target="_blank">
+https://www.coastalmanagement.com.au/what-is-coastal-engineering</a></li>
+
+<li>Hoffman, A. (2013, July 2). What is Coastal Engineering? Godfrey Hoffman Hodge
+<a href="https://ghhllc.com/blog/civil-engineering-blog-bid-300995-what-is-coastal-engineering" style="color:#72daff;" target="_blank">
+ https://ghhllc.com/blog/civil-engineering-blog-bid-300995-what-is-coastal-engineering
+</a></li>
+
+<li>Wikipedia contributors. (2026, February 6). Coastal engineering. Wikipedia. 
+<a href="https://en.wikipedia.org/wiki/Coastal_engineering" style="color:#72daff;" target="_blank">
+https://en.wikipedia.org/wiki/Coastal_engineering
+</a></li>
+</ul>
+
+<p style="font-size: 20px;"> Images: </p>
+<ul>
+<li><a href="https://gssb.com.my/what-purpose-coastal-engineering" style="color:#72daff;" target="_blank">https://gssb.com.my/what-purpose-coastal-engineering</a></li>
+
+<li><a href="https://www.peakpx.com/en/hd-wallpaper-desktop-flwfy" style="color:#72daff;" target="_blank">https://www.peakpx.com/en/hd-wallpaper-desktop-flwfy</a></li>
+
+<li><a href="https://lbengineer.com/blog/the-importance-of-seawall-structural-engineering" style="color:#72daff;" target="_blank">https://lbengineer.com/blog/the-importance-of-seawall-structural-engineering</a></li>
+
+<li><a href="https://simple.wikipedia.org/wiki/Breakwater" style="color:#72daff;" target="_blank">https://simple.wikipedia.org/wiki/Breakwater</a></li>
+
+<li><a href="https://ermis-apps.ermis-f.eu/kb/d/Measure/1121" style="color:#72daff;" target="_blank">https://ermis-apps.ermis-f.eu/kb/d/Measure/1121</a></li>
+
+<li><a href="http://blackpoolsixthasgeography.pbworks.com/w/page/24136770/Revetments" style="color:#72daff;" target="_blank">http://blackpoolsixthasgeography.pbworks.com/w/page/24136770/Revetments</a></li>
+
+<li><a href="https://www.scientificamerican.com/article/storm-surge-maps-will-warn-coastal-residents-of-potential-deadly-floods/" style="color:#72daff;" target="_blank">https://www.scientificamerican.com/article/storm-surge-maps-will-warn-coastal-residents-of-potential-deadly-floods/</a></li>
+
+<li><a href="https://www.yorkshirepost.co.uk/news/opinion/columnists/coastal-erosion-how-climate-change-threatens-yorkshire-towns-andrew-vine-3437410" style="color:#72daff;" target="_blank">https://www.yorkshirepost.co.uk/news/opinion/columnists/coastal-erosion-how-climate-change-threatens-yorkshire-towns-andrew-vine-3437410</a></li>
+
+<li><a href="https://www.worldatlas.com/natural-disasters/tsunamis.html" style="color:#72daff;" target="_blank">https://www.worldatlas.com/natural-disasters/tsunamis.html</a></li>
+
+<li><a href="https://www.vox.com/climate/2023/7/11/23791452/nyc-flooding-brooklyn-weather-climate-change" style="color:#72daff;" target="_blank">https://www.vox.com/climate/2023/7/11/23791452/nyc-flooding-brooklyn-weather-climate-change</a></li>
+
+<li><a href="https://www.caymancompass.com/2025/09/01/five-beach-restoration-projects-with-lessons-for-cayman/" style="color:#72daff;" target="_blank">https://www.caymancompass.com/2025/09/01/five-beach-restoration-projects-with-lessons-for-cayman/</a></li>
+
+<li><a href="https://www.resonanceglobal.com/blog/planting-mangroves-in-the-philippines-theres-a-partnership-and-an-app-for-that" style="color:#72daff;" target="_blank">https://www.resonanceglobal.com/blog/planting-mangroves-in-the-philippines-theres-a-partnership-and-an-app-for-that</a></li>
+
+<li><a href="https://www.gdrc.org/oceans/artificial-reefs.html" style="color:#72daff;" target="_blank">https://www.gdrc.org/oceans/artificial-reefs.html</a></li>
+</ul>
+
+</section>
+
+
+<footer>
+    <p><b>© 2026 Coastal Engineering Project.</b> Thank you for viewing, made by JOSEPH ANDREI A. OPTIONAL  BSCE - 1A</p>
+</footer>
+
+</body>
+</html>
